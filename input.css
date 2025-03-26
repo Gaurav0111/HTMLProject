@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --color-bright-red: hsl(12, 88%, 59%);
+  --color-bright-red-light: hsl(12, 88%, 69%);
+  --color-bright-red-sup-light: hsl(12, 88%, 95%);
+  --color-dark-blue: hsl(228, 39%, 23%);
+  --color-bright-blue: hsl(228, 42%, 40%);
+  --color-dark-grayish-blue: hsl(227, 12%, 61%);
+  --color-very-dark-blue: hsl(233, 12%, 13%);
+  --color-very-pale-red: hsl(13, 100%, 96%);
+  --color-very-light-gray: hsl(0, 0%, 98%);
+  --screen-sm: 480px;
+  --screen-md: 768px;
+  --screen-lg: 976px;
+  --screen-xl: 1440px;
+}
+@media (min-width: var(--screen-sm)) {
+    .sm\:text-lg { font-size: 1.125rem; }
+  }
+  
+  @media (min-width: var(--screen-md)) {
+    .md\:text-xl { font-size: 1.25rem; }
+  }
+  
+  @media (min-width: var(--screen-lg)) {
+    .lg\:text-2xl { font-size: 1.5rem; }
+  }
+  
+  @media (min-width: var(--screen-xl)) {
+    .xl\:text-3xl { font-size: 1.875rem; }
+  }

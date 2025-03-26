@@ -1,0 +1,27 @@
+{
+  "name": "htmlproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaurav0111/HTMLProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Gaurav0111/HTMLProject/issues"
+  },
+  "homepage": "https://github.com/Gaurav0111/HTMLProject#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.0.16"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.16"
+  }
+}
