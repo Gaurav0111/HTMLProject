@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Model - Gantt AI</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <img src="icons/gantt-ai.jpg" alt="My Files">
+            <h1>Gantt AI</h1>
+        </div>
+        <button class="nav-item">
+            <img src="icons/myFile.png" alt="My Files">
+            <span>My Files</span>
+        </button>
+        <button class="nav-item active">
+            <img src="icons/trainModel.jpg" alt="Train Model">
+            <span>Train Model</span>
+        </button>
+        <button class="nav-item">
+            <img src="icons/review.jpg" alt="Review Gantt">
+            <span>Review Gantt</span>
+        </button>
+        <button class="nav-item">
+            <img src="icons/compareGantt.png" alt="Compare Gantt">
+            <span>Compare Gantt</span>
+        </button>
+        <button class="nav-item">
+            <img src="icons/trainModel.jpg" alt="Generate Gantt">
+            <span>Generate Gantt</span>
+        </button>
+        <button class="nav-item">
+            <img src="icons/setting.png" alt="Settings">
+            <span>Settings</span>
+        </button>
+        <div class="profile-section">
+            <img src="icons/profile.png" alt="Profile" />
+            <button onclick="toggleSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="20" height="20">
+                    <path d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="main-content" id="main-content">
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h2 class="text-2xl font-bold">Train Model</h2>
+                <p class="text-gray-600">Detached Homes - GTA Model / Residential Low-Rise</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <select class="border rounded px-3 py-2">
+                    <option value="all">All</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <input type="text" placeholder="Search..." class="border rounded px-3 py-2">
+                <button class="text-gray-600">
+                    <img src="icons/notification-bell.svg" alt="Notifications" class="h-6 w-6">
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-white shadow rounded-lg p-4">
+            <table class="w-full border-collapse">
+                <thead>
+                    <tr class="bg-gray-200 text-gray-600 uppercase text-sm">
+                        <th class="p-3 text-left">Project Name</th>
+                        <th class="p-3 text-left">Project Type</th>
+                        <th class="p-3 text-left">Area</th>
+                        <th class="p-3 text-left">Cost</th>
+                        <th class="p-3 text-left">Location</th>
+                        <th class="p-3 text-left">Complexity</th>
+                        <th class="p-3 text-left">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b">
+                        <td class="p-3">Duncan Homes</td>
+                        <td class="p-3">Residential Low Rise</td>
+                        <td class="p-3">3800 Sqft</td>
+                        <td class="p-3">2,446,334 CAD</td>
+                        <td class="p-3">Milton, ON</td>
+                        <td class="p-3"><span class="px-2 py-1 rounded complexity-low">Low</span></td>
+                        <td class="p-3"><img src="icons/action.jpg" alt="Action" class="h-5 w-5"></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-3">Zenith Development</td>
+                        <td class="p-3">Residential Low Rise</td>
+                        <td class="p-3">5250 Sqft</td>
+                        <td class="p-3">3,540,300 CAD</td>
+                        <td class="p-3">Milton, ON</td>
+                        <td class="p-3"><span class="px-2 py-1 rounded complexity-medium">Medium</span></td>
+                        <td class="p-3"><img src="icons/action.jpg" alt="Action" class="h-5 w-5"></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-3">Bliss Gate Homes</td>
+                        <td class="p-3">Residential Low Rise</td>
+                        <td class="p-3">4320 Sqft</td>
+                        <td class="p-3">2,550,000 CAD</td>
+                        <td class="p-3">Scarborough, ON</td>
+                        <td class="p-3"><span class="px-2 py-1 rounded complexity-low">Low</span></td>
+                        <td class="p-3"><img src="icons/action.jpg" alt="Action" class="h-5 w-5"></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-3">Riviera 2</td>
+                        <td class="p-3">Residential Low Rise</td>
+                        <td class="p-3">4050 Sqft</td>
+                        <td class="p-3">2,130,446 CAD</td>
+                        <td class="p-3">Scarborough, ON</td>
+                        <td class="p-3"><span class="px-2 py-1 rounded complexity-low">Low</span></td>
+                        <td class="p-3"><img src="icons/action.jpg" alt="Action" class="h-5 w-5"></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-3">Thomas Homes</td>
+                        <td class="p-3">Residential Low Rise</td>
+                        <td class="p-3">4800 Sqft</td>
+                        <td class="p-3">3,860,600 CAD</td>
+                        <td class="p-3">Hamilton, ON</td>
+                        <td class="p-3"><span class="px-2 py-1 rounded complexity-medium">Medium</span></td>
+                        <td class="p-3"><img src="icons/action.jpg" alt="Action" class="h-5 w-5"></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-3">Firgate Homes</td>
+                        <td class="p-3">Residential Low Rise</td>
+                        <td class="p-3">4877 Sqft</td>
+                        <td class="p-3">3,130,500 CAD</td>
+                        <td class="p-3">Elora, ON</td>
+                        <td class="p-3"><span class="px-2 py-1 rounded complexity-low">Low</span></td>
+                        <td class="p-3"><img src="icons/action.jpg" alt="Action" class="h-5 w-5"></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-3">Widdicombe 3</td>
+                        <td class="p-3">Residential Low Rise</td>
+                        <td class="p-3">3750 Sqft</td>
+                        <td class="p-3">2,830,000 CAD</td>
+                        <td class="p-3">Mississauga, ON</td>
+                        <td class="p-3"><span class="px-2 py-1 rounded complexity-high">High</span></td>
+                        <td class="p-3"><img src="icons/action.jpg" alt="Action" class="h-5 w-5"></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-3">One Down Development</td>
+                        <td class="p-3">Residential Low Rise</td>
+                        <td class="p-3">5150 Sqft</td>
+                        <td class="p-3">3,150,040 CAD</td>
+                        <td class="p-3">Vaughan, ON</td>
+                        <td class="p-3"><span class="px-2 py-1 rounded complexity-low">Low</span></td>
+                        <td class="p-3"><img src="icons/action.jpg" alt="Action" class="h-5 w-5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="flex justify-end mt-4">
+            <button class="bg-green-500 text-white px-4 py-2 rounded mr-2">Train Model</button>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded">Add Gantt</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('main-content');
+            sidebar.classList.toggle('minimized');
+            mainContent.classList.toggle('minimized');
+        }
+    </script>
+</body>
+
+</html>
